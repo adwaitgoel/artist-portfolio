@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 
 // Custom Instagram Icon Component
 const InstagramIcon = ({ className }: { className?: string }) => (
@@ -39,11 +40,11 @@ export default function Navigation() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           
-          {/* Artist Name - Minimal */}
+          {/* Artist Name - Fixed Link */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-xl md:text-2xl font-light tracking-wide text-charcoal hover:text-bronze transition-colors duration-500">
+            <Link href="/" className="text-xl md:text-2xl font-light tracking-wide text-charcoal hover:text-bronze transition-colors duration-500">
               Pratibha Goel
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation with Social Icons */}
