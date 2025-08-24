@@ -36,7 +36,7 @@ export default function ExhibitionsPage() {
               </h1>
               <p className="text-lg md:text-xl text-sage max-w-3xl mx-auto leading-relaxed">
                 A journey through artistic milestones, celebrating <strong className="text-charcoal">15+ years</strong> of 
-                exhibitions across India's most prestigious galleries and art festivals.
+                exhibitions across India&apos;s most prestigious galleries and art festivals.
               </p>
             </div>
           </div>

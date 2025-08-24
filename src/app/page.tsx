@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import Image from 'next/image'
 import Navigation from '../components/layout/navigation'
 import Footer from '../components/layout/footer'
@@ -24,8 +24,10 @@ const WhatsAppIcon = ({ className = "" }: { className?: string }) => (
 )
 
 export default function Home() {
+  // Wrap artForms with useMemo to prevent recreation on every render
+
   // Art forms data
-  const artForms = [
+  const artForms = useMemo(() => [
     { 
       name: 'Oil Painting', 
       image: '/artworks/oil-painting-featured.jpeg',
@@ -51,7 +53,7 @@ export default function Home() {
       image: '/artworks/water-color-featured.jpg',
       alt: 'One Stroke Painting by Pratibha Goel'
     }
-  ]
+  ], [])
 
   const [selectedArtForm, setSelectedArtForm] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
