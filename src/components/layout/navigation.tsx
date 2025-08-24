@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Custom Instagram Icon Component
 const InstagramIcon = ({ className }: { className?: string }) => (
@@ -40,7 +41,7 @@ export default function Navigation() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           
-          {/* Artist Name - Fixed Link */}
+          {/* Artist Name - Text Version */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl md:text-2xl font-light tracking-wide text-charcoal hover:text-bronze transition-colors duration-500">
               Pratibha Goel
@@ -72,7 +73,7 @@ export default function Navigation() {
               <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-bronze transition-all duration-500 group-hover:w-full"></span>
             </a>
             <a 
-              href="#exhibitions" 
+              href="/exhibitions" 
               className="text-sage hover:text-charcoal font-normal tracking-wider text-sm uppercase transition-all duration-500 relative group"
             >
               Exhibitions
@@ -148,7 +149,7 @@ export default function Navigation() {
               Classes
             </a>
             <a 
-              href="#exhibitions" 
+              href="/exhibitions" 
               className="block text-sage hover:text-charcoal font-normal tracking-wider text-sm uppercase py-2 transition-colors duration-500"
               onClick={() => setIsMenuOpen(false)}
             >

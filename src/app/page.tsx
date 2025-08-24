@@ -43,12 +43,12 @@ export default function Home() {
     },
     { 
       name: 'Madhubani', 
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop&crop=center',
+      image: '/artworks/oil-painting-featured.jpeg',
       alt: 'Traditional Madhubani Art by Pratibha Goel'
     },
     { 
       name: 'One Stroke', 
-      image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a04?w=800&h=600&fit=crop&crop=center',
+      image: '/artworks/water-color-featured.jpg',
       alt: 'One Stroke Painting by Pratibha Goel'
     }
   ]
